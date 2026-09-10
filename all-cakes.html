@@ -681,6 +681,116 @@ body {
     font-weight: 600;
     white-space: nowrap;
 }
+/* =========================================
+   MOBILE TOP BAR FIX
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* ---------- MAIN HEADER ---------- */
+
+    .main-header {
+        height: 72px;
+    }
+
+    .nav-container {
+        width: 100%;
+        max-width: none;
+        padding: 0 18px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* ---------- LOGO ---------- */
+
+    .logo {
+        font-size: 22px;
+        line-height: 1.05;
+        white-space: normal;
+        width: 85px;
+        flex-shrink: 0;
+    }
+
+    .logo span {
+        display: block;
+    }
+
+    /* ---------- NAVIGATION ---------- */
+
+    .main-nav {
+        height: 72px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1;
+        min-width: 0;
+    }
+
+    .main-nav a {
+        height: 72px;
+        padding: 0 8px;
+
+        font-size: 11px;
+        letter-spacing: 0.3px;
+
+        white-space: nowrap;
+    }
+
+    /* Prevent ORDER NOW from becoming huge */
+    .main-nav .order-btn {
+        padding: 0 10px;
+        margin-left: 2px;
+    }
+
+
+    /* ---------- CONTACT BAR ---------- */
+
+    .info-bar {
+        top: 72px;
+        height: auto;
+        min-height: 62px;
+    }
+
+    .info-container {
+        min-height: 62px;
+        height: auto;
+
+        padding: 7px 18px;
+        box-sizing: border-box;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 4px;
+
+        font-size: 11px;
+        line-height: 1.4;
+        text-align: center;
+    }
+
+    .location-info,
+    .contact-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 6px;
+
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+
+    /* ---------- PAGE CONTENT ---------- */
+
+    .catalogue {
+        padding-top: 134px;
+    }
+}
 </style>
 </head>
 
@@ -738,7 +848,8 @@ body {
 
         <!-- LOGO -->
         <a href="index.html" class="logo">
-            <span>Ample</span> Cakes
+            <span>Ample</span>
+            Cakes
         </a>
 
 
