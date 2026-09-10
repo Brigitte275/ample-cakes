@@ -447,14 +447,7 @@ body {
     }
 
 }
-@media (max-width: 600px){
-    .topbar{
-      padding:10px 20px;
-      flex-direction:wrap;
-      gap:5px;
-      text-align:center;
-  }
-}
+
 @media (max-width: 500px) {
 
     .cake-grid {
@@ -466,85 +459,7 @@ body {
     }
 
 }
-/* =========================================
-   MOBILE HEADER (append to bottom of your CSS file)
-========================================= */
 
-@media (max-width: 700px) {
-
-    /* Let the header grow tall enough for wrapped content */
-    .main-header {
-        height: auto;
-        min-height: 58px;
-        padding: 8px 0;
-    }
-
-    .nav-container {
-        flex-wrap: wrap;
-        row-gap: 6px;
-        padding: 0 4%;
-    }
-
-    /* Logo wraps: "Ample" italic on top, "Cakes" below */
-    .logo {
-        font-size: 22px;
-        white-space: normal;
-        line-height: 1.1;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .logo span {
-        display: block;
-    }
-
-    /* Nav links: smaller, wrap onto their own row, no fixed 58px height */
-    .main-nav {
-        height: auto;
-        flex-wrap: wrap;
-        justify-content: flex-end;
-        gap: 2px;
-    }
-
-    .main-nav a {
-        height: auto;
-        padding: 6px 12px;
-        font-size: 13px;
-    }
-
-    /* Hide the Order button on small screens (optional — remove this
-       block if you'd rather keep it wrapping onto its own row) */
-    .main-nav .order-btn {
-        display: none;
-    }
-
-    /* Contact/info bar becomes a centered, stacked block */
-    .info-bar {
-        height: auto;
-        position: static;   /* stop it fixing under the header on mobile */
-        padding: 8px 0;
-    }
-
-    .info-container {
-        flex-direction: column;
-        height: auto;
-        gap: 4px;
-        text-align: center;
-        font-size: 12.5px;
-    }
-
-    .location-info,
-    .contact-info {
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    /* Since info-bar is no longer fixed on mobile, remove the
-       top padding that was pushing content down for it */
-    .catalogue {
-        padding-top: 70px;
-    }
-}
 
 /* =========================
    CAKE POPUP / LIGHTBOX
@@ -1010,25 +925,25 @@ const cakes = {
         {
             name: "Chocolate Cake with Butter Cream Frosting",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/ChocolateCakewithButterCreamFrosting.jpeg"
+            image: "CHOCOLATE/ChocolateCakeWithButterCreamFrosting.jpeg"
         },
 
         {
-            name: "Chocolate Cake with Chocolate Ganache and Yellow Rose Decoration",
+            name: "Chocolate Cake with Chocolate Ganache",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/ChocolateCakewithChocolateGanache.jpeg"
+            image: "CHOCOLATE/ChocolateCakeWithChocolateGanache.jpeg"
         },
 
         {
             name: "Chocolate Cake with Gold Decoration",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/ChocolateCakewithGoldDecoration.jpg"
+            image: "CHOCOLATE/ChocolateCakeWithGoldDecoration.jpg"
         },
 
         {
             name: "Chocolate Cake with Rose Decorations",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/ChocolateCakewithRosedecorations.jpeg"
+            image: "CHOCOLATE/ChocolateCakewithRoseDecorations.jpeg"
         },
 
         {
@@ -1040,7 +955,7 @@ const cakes = {
         {
             name: "Chocolate Gemini Theme Cake",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/ChocolateGeminiThemeCake.jpeg"
+            image: "CHOCOLATE/ChocolateGeminithemeCake.jpeg"
         },
 
         {
@@ -1122,7 +1037,7 @@ const cakes = {
         {
             name: "Happy Birthday Chocolate Heart Cake with white Fondant",
             price: "KShs 2,500.00",
-            image: "CHOCOLATE/HappyBirthDayChocolateHeartCake.jpeg"
+            image: "CHOCOLATE/HappyBirthdayChocolateHeartCake.jpeg"
         },
         {
             name: "Green & Gold Floral Birthday Cake",
@@ -1148,13 +1063,13 @@ const cakes = {
         {
             name: "Boy Twin Birthday Cake",
             price: "KShs 2,500.00",
-            image: "VANILLA/BoyTwinsiblingBirthdayCake.jpeg"
+            image: "VANILLA/BoyTwinSiblingBirthdayCake.jpeg"
         },
 
         {
             name: "Girl Twin Birthday Cake",
             price: "KShs 2,500.00",
-            image: "VANILLA/GirlTwinsiblingBirthdayCake.jpeg"
+            image: "VANILLA/GirlTwinSiblingBirthdayCake.jpeg"
         },
 
         {
@@ -1236,7 +1151,7 @@ const cakes = {
         {
             name: "Classic Funfetti Cake",
             price: "KShs 2,500.00",
-            image: "VANILLA/ClassicFunfettiCake ✨.png"
+            image: "VANILLA/ClassicFunfettiCake ✨.jpeg"
         },
         {
             name: "Pink and Turquoise Rosette Cake",
@@ -1246,7 +1161,7 @@ const cakes = {
         {
             name: "Pineapple Upside-Down Cake",
             price: "KShs 2,500.00",
-            image: "VANILLA/PineappleUpside-DownCake 🍍.png"
+            image: "VANILLA/PineappleUpside-DownCake 🍍.jpeg"
         },
         {
             name: "Elegant Graduation Cake",
@@ -1371,7 +1286,7 @@ const cakes = {
         {
             name: "Simple Fruit Cake",
             price: "KShs 5,000.00",
-            image: "FRUIT CAKES/SimpleFruitcake.jpg"
+            image: "FRUIT CAKES/SimpleFruitCake.jpg"
         }
     ],
 
